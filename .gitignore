@@ -3,9 +3,12 @@
 !**/src/test/**/build/
 
 ### Gradle ###
-.gradle
+.gradle/
+build/
+*.class
 
 ### IntelliJ IDEA ###
+application.properties
 HELP.md
 .idea/
 .idea/modules.xml

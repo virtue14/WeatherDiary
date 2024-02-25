@@ -17,5 +17,6 @@ public class Memo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String text;
 }
