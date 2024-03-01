@@ -32,6 +32,7 @@ public class DiaryService {
     private String apikey;
 
 
+    // 일기 쓰기
     public void createDiary(LocalDate date, String text) {
 //        System.out.println(getWeatherString());
         /* 설명: open weather map에서 날씨 데이터 가져오기 */
@@ -61,6 +62,13 @@ public class DiaryService {
     // 범위 날짜 조회
     public List<Diary> readDiaries(LocalDate startDate, LocalDate endDate) {
         return diaryRepository.findAllByDateBetween(startDate, endDate);
+    }
+
+    // 일기 수정
+    public void updateDiary(LocalDate date, String text) {
+        Diary nowDiary = diaryRepository.getFirstByDate(date);
+        nowDiary.setText(text);
+        diaryRepository.save(nowDiary);
     }
 
     private String getWeatherString() {
