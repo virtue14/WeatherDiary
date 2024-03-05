@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/project?serverTimezone=UTC&characterEnding=UTF-8
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    database: mysql
+  profiles:
+    active: private
+
+logging:
+  config: classpath:logback-spring.xml
