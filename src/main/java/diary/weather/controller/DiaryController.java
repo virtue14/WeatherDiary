@@ -1,12 +1,10 @@
-package zerobase.weather.controller;
+package diary.weather.controller;
 
-import lombok.Getter;
+import diary.weather.service.DiaryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
-import zerobase.weather.domain.Diary;
-import zerobase.weather.error.InvalidDate;
-import zerobase.weather.service.DiaryService;
+import diary.weather.domain.Diary;
 
 import java.time.LocalDate;
 import java.util.List;

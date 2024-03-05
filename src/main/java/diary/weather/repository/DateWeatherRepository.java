@@ -1,8 +1,8 @@
-package zerobase.weather.repository;
+package diary.weather.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import zerobase.weather.domain.DateWeather;
+import diary.weather.domain.DateWeather;
 
 import java.time.LocalDate;
 import java.util.List;
