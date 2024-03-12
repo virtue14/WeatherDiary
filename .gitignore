@@ -1,5 +1,6 @@
 ### ADD SETTING ###
 logs
+application-private.yml
 
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
@@ -11,7 +12,6 @@ build/
 *.class
 
 ### IntelliJ IDEA ###
-application.properties
 HELP.md
 .idea/
 .idea/modules.xml
